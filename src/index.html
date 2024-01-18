@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <ul class="list">
+
+    </ul>
+    <ul class="menu">
+        <li id="add"><button><svg><use href="../symbol-defs.svg#plus"></use></svg>Add Card</button></li>
+        <li id="edit"><button><svg><use href="../symbol-defs.svg#edit"></use></svg>Edit Card</button></li>
+        <li id="minus"><button><svg><use href="../symbol-defs.svg#minus"></use></svg>Delete Card</button></li>
+        <li id="search"><button><svg><use href="../symbol-defs.svg#minus"></use></svg>Search</button></li>
+    </ul>
+    <div class="backdrop off">
+        <form>
+            <h2 id="title">Add Card</h2>
+            <ul>
+                <li><input minlength="3" type="text" class="card-info" placeholder="Name" required /></li>
+                <li><input minlength="3" type="text" class="card-info" placeholder="Surname" required /></li>
+                <li><input min="1" max="99" type="number" class="card-info" placeholder="Age" required /></li>
+                <li><input minlength="3" type="text" class="card-info" placeholder="Course" required /></li>
+                <li><input minlength="3" type="text" class="card-info" placeholder="Faculty" required /></li>
+            </ul>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
